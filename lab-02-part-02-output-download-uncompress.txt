@@ -126,7 +126,7 @@ cd ~
 ==========
 13. So... the lab materials are located at this url:
 
-https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
+https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/mtec1003-lab-02.zip
 
 Download the file using curl... to a file called mtec1003-lab-02.zip using the commandline.  
 
@@ -147,6 +147,7 @@ Music      google.html  mtec1003
 
 Write down the command that you used to uncompress the file.
 ----------
+unzip mtec1003-lab-02.zip
 
 
 
@@ -155,7 +156,7 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
+books  logs  web
 
 
 ==========
@@ -166,7 +167,9 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+Desktop    Pictures     house              mtec1003-lab-02
+Documents  Videos       media-computation  mtec1003-lab-02.zip
+Music      google.html  mtec1003           stuff
 
 
 ==========
@@ -178,7 +181,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+hello.txt
 
 
 ==========
@@ -190,7 +193,10 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+Desktop    Videos             mtec1003             
+Documents  google.html        mtec1003-lab-02
+Music      house              mtec1003-lab-02.zip
+Pictures   media-computation  stuff
 
 
 ==========
@@ -200,7 +206,8 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+stuff/
+stuff/hello.txt
 
 
 ==========
@@ -208,7 +215,10 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+Desktop    Videos             mtec1003             stuff.tar
+Documents  google.html        mtec1003-lab-02
+Music      house              mtec1003-lab-02.zip
+Pictures   media-computation  stuff
 
 
 ==========
@@ -218,7 +228,10 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+Desktop    Videos             mtec1003             stuff.tar.gz
+Documents  google.html        mtec1003-lab-02
+Music      house              mtec1003-lab-02.zip
+Pictures   media-computation  stuff
 
 
 ==========
@@ -232,7 +245,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books  logs  stuff.tar.gz  web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -241,7 +254,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+books  logs  stuff  stuff.tar.gz  web
 
 
 ==========
